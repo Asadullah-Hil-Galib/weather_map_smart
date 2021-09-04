@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+$white-color: #fff;
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(120deg, #05bdd5, #115b98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 100%;
+  max-width: 500px;
+  background: #037690ad;
+  position: relative;
+  z-index: 1;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 2px solid $white-color;
+  overflow: hidden;
+  .header {
+    .header_top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem 1rem;
+      h3 {
+        font-size: 1.4rem;
+        color: $white-color;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+      }
+      .input_filed {
+        font-size: 0.9rem;
+        color: $white-color;
+        outline: none;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $white-color;
+        padding: 0.3rem 1rem;
+      }
+      .input_filed::placeholder {
+        color: $white-color;
+        background: transparent;
+      }
+      .date {
+        color: $white-color;
+        font-size: 1.4rem;
+        font-weight: 600;
+      }
+    }
+    .header_bottom {
+      background: #02607a;
+      color: $white-color;
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+    }
+  }
+  .body {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid $white-color;
+    div {
+      width: 33%;
+    }
+    .first_info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      .weather_icon {
+        width: 100px;
+        display: block;
+      }
+      .weather_type {
+        font-size: 1.2rem;
+        color: $white-color;
+      }
+    }
+    .tempar_city {
+      font-size: 2rem;
+      font-weight: 400;
+      color: $white-color;
+      .tempar {
+        font-size: 6rem;
+        font-weight: 400;
+      }
+    }
+    .feels_parent {
+      display: flex;
+      color: $white-color;
+      align-items: center;
+      .feels {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $white-color;
+      }
+      .feels_like {
+        padding-left: 0.3rem;
+        color: $white-color;
+        font-weight: 300;
+        margin-left: 0.4rem;
+      }
+    }
+  }
+  .min_max {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% !important;
+    h3 {
+      width: 50%;
+      text-align: center;
+      color: $white-color;
+      font-weight: 400;
+    }
+  }
+  .third_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    .down {
+      width: 100% !important;
+      .city_name {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $white-color;
+        text-align: center;
+      }
+    }
+  }
+}
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #037690ad;
+  filter: blur(100%);
+  z-index: -1;
+}

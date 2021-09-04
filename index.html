@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Map World all city</title>
+    <!-------Link Font Awesome CDN------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!------Link FaveIcon------>
+    <link rel="shortcut icon" href="img/weather_icon.png" type="image/x-icon" />
+    <!------Link STYLESHEET SCSS------>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="header">
+        <div class="header_top">
+          <div>
+            <h3>GBS WEATHER</h3>
+          </div>
+          <div>
+            <input class="input_filed" type="text" placeholder="City Name" />
+          </div>
+          <div>
+            <span class="date">00-00</span>
+          </div>
+        </div>
+        <div class="header_bottom">
+          <span class="day_name">Monday</span>
+        </div>
+      </section>
+      <section class="body">
+        <div class="first_info">
+          <img class="weather_icon" src="img/weather_icon.png" alt="" />
+          <span class="weather_type">Party Cloudy</span>
+        </div>
+        <div>
+          <h1 class="tempar_city"><span class="tempar">24</span>℃</h1>
+          <h1 class="feels_parent">
+            <span class="feels">Feels Like</span>
+            <span class="feels_like"> 22</span>℃
+          </h1>
+        </div>
+        <div class="third_info">
+          <div class="min_max">
+            <h3><span class="min_weather">20</span>℃</h3>
+            <h3><span class="max_weather">27</span>℃</h3>
+          </div>
+          <div class="down">
+            <h2 class="city_name">City Name</h2>
+          </div>
+        </div>
+      </section>
+      <section class="footer"></section>
+    </main>
+    <!-- Cannect Script JS  -->
+    <script src="js/style.js"></script>
+  </body>
+</html>
